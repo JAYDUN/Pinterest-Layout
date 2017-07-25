@@ -1,0 +1,108 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width:100%;
+    /*min-height:500px;*/
+}
+.wraper{
+    /*min-height:500px;*/
+    width:auto;
+   min-width:500px;
+    margin:0 auto;
+    overflow:auto;
+
+}
+/*img container*/
+.box{
+    position: relative;
+    float:left;
+    /*margin-bottom: 5px;*/
+}
+.content{
+    margin-right:5px;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+
+}
+.content img{
+    width:200px;
+    height:auto;
+    z-index: 1;
+}
+/*图片hover特效*/
+.img-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #3c3c3c;
+    opacity: 0;
+    filter: alpha(opacity=0) \9;
+    color: #fff;
+    transition: opacity 1000ms;
+    -moz-transition: opacity 1000ms;
+    -o-transition: opacity 1000ms;
+    -webkit-transition: opacity 1000ms;
+    width:200px;
+    height:40px;
+    line-height: 40px;
+    text-indent: 30px;
+}
+/*back to top css*/
+.top-feed {
+    visibility: hidden;
+    position: fixed;
+    _position: absolute;
+    left: 50%;
+    margin-left: 447px;
+    width: 51px;
+    bottom: 30px;
+    _top: 200px;
+    _bottom: auto;
+}
+.top-feed .to-top,.top-feed .icon-qrcode {
+    position: relative;
+    height: 25px;
+    width: 38px;
+    padding-top: 12px;
+    border: 1px solid #e3e3e3;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+.top-feed .to-top {
+    height: 26px;
+    margin: 0 0 6px 10px;
+}
+.top-feed .icon-mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 38px;
+    line-height: 38px;
+    width: 38px;
+    z-index: 3;
+    font-size: 13px;
+    background-color: #eee;
+    color: #999;
+    margin-left: -1px;
+    margin-top: -1px;
+    border: 1px solid #e3e3e3;
+}
+.icon-mask .text {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    line-height: 25px;
+    width: 30px;
+    margin-left:5px;
+}
+.top-feed .to-top span {
+    display: block;
+    height: 17px;
+    width: 33px;
+    margin: 0 auto;
+    background: url(./img/top.png) no-repeat -1px -10px;
+    _background: url(./img/top.png) no-repeat -1px -10px;
+}
